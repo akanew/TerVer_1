@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TerVer_Lab1Class</class>
+ <widget class="QMainWindow" name="TerVer_Lab1Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>644</width>
+    <height>694</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>644</width>
+    <height>694</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>644</width>
+    <height>694</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>TerVer_Lab1</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="Button">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>223</y>
+      <width>120</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Загрузить из файла</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="Table">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>32</y>
+      <width>618</width>
+      <height>182</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">selection-background-color: rgb(255, 255, 255);
+selection-color: rgb(0, 0, 0);</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>60</number>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>27</number>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>20</number>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="Button_2">
+    <property name="geometry">
+     <rect>
+      <x>541</x>
+      <y>344</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Вычислить</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="k_widget">
+    <property name="geometry">
+     <rect>
+      <x>476</x>
+      <y>344</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Create_Table">
+    <property name="geometry">
+     <rect>
+      <x>471</x>
+      <y>223</y>
+      <width>140</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сформировать таблицу</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Table_Height">
+    <property name="geometry">
+     <rect>
+      <x>421</x>
+      <y>223</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Table_Width">
+    <property name="geometry">
+     <rect>
+      <x>277</x>
+      <y>222</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>331</x>
+      <y>226</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Высота таблицы</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>181</x>
+      <y>226</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ширина таблицы</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>219</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>218</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>211</y>
+      <width>620</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>622</x>
+      <y>218</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_5">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>242</y>
+      <width>620</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>331</x>
+      <y>347</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Количество интервалов (K)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>167</x>
+      <y>346</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сумма частот (N)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Sum">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>345</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Line" name="line_6">
+    <property name="geometry">
+     <rect>
+      <x>518</x>
+      <y>340</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_7">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>332</y>
+      <width>620</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_8">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>363</y>
+      <width>620</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_9">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>339</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_10">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>340</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>406</y>
+      <width>621</width>
+      <height>285</height>
+     </rect>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Triangular</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Гистограмма и полигон относительных частот (частостей)</string>
+     </attribute>
+     <widget class="QGraphicsView" name="Browser_2">
+      <property name="geometry">
+       <rect>
+        <x>313</x>
+        <y>3</y>
+        <width>300</width>
+        <height>260</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="Browser">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>3</y>
+        <width>300</width>
+        <height>260</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Zoom_Button_1">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>244</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>loupe.png</normaloff>loupe.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Zoom_Button_2">
+      <property name="geometry">
+       <rect>
+        <x>314</x>
+        <y>244</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>loupe.png</normaloff>loupe.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string> Эмпирическая функция распределения и её график  </string>
+     </attribute>
+     <widget class="QGraphicsView" name="Browser_4">
+      <property name="geometry">
+       <rect>
+        <x>313</x>
+        <y>3</y>
+        <width>300</width>
+        <height>260</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="Browser_3">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>3</y>
+        <width>300</width>
+        <height>260</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Zoom_Button_3">
+      <property name="geometry">
+       <rect>
+        <x>314</x>
+        <y>244</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>loupe.png</normaloff>loupe.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="X">
+    <property name="geometry">
+     <rect>
+      <x>54</x>
+      <y>375</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="D">
+    <property name="geometry">
+     <rect>
+      <x>172</x>
+      <y>375</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="S">
+    <property name="geometry">
+     <rect>
+      <x>289</x>
+      <y>375</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>32</x>
+      <y>377</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X =</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>377</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>D =</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>265</x>
+      <y>377</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>S =</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_11">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>392</y>
+      <width>620</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_12">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>370</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_13">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>370</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_14">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>370</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_15">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>370</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>256</y>
+      <width>621</width>
+      <height>79</height>
+     </rect>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Triangular</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Интервальный статистический ряд частот</string>
+     </attribute>
+     <widget class="QTableWidget" name="Table_2">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>1</y>
+        <width>600</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">selection-color: rgb(0, 0, 0);
+selection-background-color: rgb(255, 255, 255);</string>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>85</number>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>20</number>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Интервальный статистический ряд частостей</string>
+     </attribute>
+     <widget class="QTableWidget" name="Table_3">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>1</y>
+        <width>600</width>
+        <height>58</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">selection-color: rgb(0, 0, 0);
+selection-background-color: rgb(255, 255, 255);</string>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>85</number>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>20</number>
+      </attribute>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="Create_Table_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>344</y>
+      <width>140</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сформировать таблицу</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_16">
+    <property name="geometry">
+     <rect>
+      <x>352</x>
+      <y>370</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="A">
+    <property name="geometry">
+     <rect>
+      <x>395</x>
+      <y>375</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>369</x>
+      <y>377</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string> α ϵ</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_17">
+    <property name="geometry">
+     <rect>
+      <x>486</x>
+      <y>370</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Sigma">
+    <property name="geometry">
+     <rect>
+      <x>529</x>
+      <y>375</y>
+      <width>90</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>506</x>
+      <y>377</y>
+      <width>21</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>σ ϵ</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="Text_Task">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>7</y>
+      <width>618</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>Table</tabstop>
+  <tabstop>Button</tabstop>
+  <tabstop>Table_Width</tabstop>
+  <tabstop>Table_Height</tabstop>
+  <tabstop>Create_Table</tabstop>
+  <tabstop>tabWidget_2</tabstop>
+  <tabstop>Table_2</tabstop>
+  <tabstop>Create_Table_2</tabstop>
+  <tabstop>Sum</tabstop>
+  <tabstop>k_widget</tabstop>
+  <tabstop>Button_2</tabstop>
+  <tabstop>X</tabstop>
+  <tabstop>D</tabstop>
+  <tabstop>S</tabstop>
+  <tabstop>A</tabstop>
+  <tabstop>Sigma</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>Browser</tabstop>
+  <tabstop>Browser_2</tabstop>
+  <tabstop>Table_3</tabstop>
+  <tabstop>Browser_3</tabstop>
+  <tabstop>Browser_4</tabstop>
+ </tabstops>
+ <resources>
+  <include location="terver_lab1.qrc"/>
+ </resources>
+ <connections/>
+</ui>
